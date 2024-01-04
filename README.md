@@ -20,7 +20,7 @@ pip install black
 
 (7) Fork this repository.
 
-(8) Run single_neuron.py. The code should return 1 plot that displays the decoded neuron output - should look identical to Figure_1.png in this repository. Don't worry about understanding this code yet! We will get there around T10.
+(8) Open single_neuron.py. Edit the title of the plot (line 57) to also display your last name. For me, the title shows "Decoded Neuron Output - Fair". Run your edited code. Your code should return 1 plot that displays the decoded neuron output with your last name in the title. Save this figure in your repository as a Neuron_Output.png (it will also upload as part of your submission and will show me that everything ran properly). Don't worry about understanding this code yet! We will get there around T10.
 
 (9) Run Black to check your code for minor errors and improper formatting using the following command (I did this in the terminal within VS code):
 black --check .
