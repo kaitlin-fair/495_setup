@@ -54,16 +54,4 @@ plt.figure()
 plt.plot(sim.trange(), sim.data[filtered])
 plt.plot(sim.trange(), sim.data[cos_probe])
 plt.xlim(0, 1)
-
-# Plot the spiking output of the ensemble
-plt.figure(figsize=(10, 8))
-plt.subplot(221)
-rasterplot(sim.trange(), sim.data[spikes])
-plt.ylabel("Neuron")
-plt.xlim(0, 1)
-
-# Plot the soma voltages of the neurons
-plt.subplot(222)
-plt.plot(sim.trange(), sim.data[voltage][:, 0], "r")
-plt.xlim(0, 1)
-plt.show()
+plt.title('Decoded Neuron Output')
