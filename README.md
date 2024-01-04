@@ -20,7 +20,7 @@ pip install black
 
 (7) Fork this repository.
 
-(8) Run single_neuron.py. The code should return 1 plot that displays the decoded neuron output - should look identical to png file in this repository. Don't worry about understanding this code yet! We will get there around T10.
+(8) Run single_neuron.py. The code should return 1 plot that displays the decoded neuron output - should look identical to Figure_1.png in this repository. Don't worry about understanding this code yet! We will get there around T10.
 
 (9) Run Black to check your code for minor errors and improper formatting using the following command (I did this in the terminal within VS code):
 black --check .
