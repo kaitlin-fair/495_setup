@@ -24,6 +24,6 @@ pip install black
 
 (9) Run Black to check your code for minor errors and improper formatting using the following command (I did this in the terminal within VS code):
 black --check .
-If the output does not say "1 file would be left unchanged", edit the code to resolve the issue and run again. Repeat until the output is "1 file would be left unchanged".
+If the output does not say "All done! ✨ 🍰 ✨ 1 file would be left unchanged.", edit the code to resolve the issue and run again. Repeat until the output is "All done! ✨ 🍰 ✨ 1 file would be left unchanged.".
 
 (10) Upload your code from GitHub into Gradescope under "Setup Quiz" assignment by T4, 1159.
