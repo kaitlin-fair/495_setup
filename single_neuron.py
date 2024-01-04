@@ -1,4 +1,4 @@
-## Code cred: 
+## Code cred:
 ## https://www.nengo.ai/nengo/examples/basic/single-neuron.html
 
 ## Setup tools
@@ -54,4 +54,4 @@ plt.figure()
 plt.plot(sim.trange(), sim.data[filtered])
 plt.plot(sim.trange(), sim.data[cos_probe])
 plt.xlim(0, 1)
-plt.title('Decoded Neuron Output')
+plt.title("Decoded Neuron Output")
