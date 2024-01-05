@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import nengo
-from nengo.utils.matplotlib import rasterplot
 
 from nengo.dists import Uniform
 
@@ -55,3 +54,5 @@ plt.plot(sim.trange(), sim.data[filtered])
 plt.plot(sim.trange(), sim.data[cos_probe])
 plt.xlim(0, 1)
 plt.title("Decoded Neuron Output - LastName")
+plt.show()
+
