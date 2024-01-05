@@ -1,6 +1,6 @@
 # Setup Assignment Instructions
 
-(1) Set up a GitHub Account.
+(1) Set up a GitHub Account and familiarize yourself with how to use it. Here's a great reference used in ECE281: https://usafa-ece.github.io/ece281-book/appendix/github.html
 
 (2) Ensure you have Python downloaded locally to the computer you will use during this course. I used Anaconda to download Python: https://www.anaconda.com/download
 
