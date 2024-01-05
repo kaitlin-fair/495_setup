@@ -12,7 +12,7 @@
 For troubleshooting: https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_open-a-git-repository
 
 (6) Install Nengo (this is what we will use to program neurons) using the following command: 
-pip install nengo
+`pip install nengo`
 For troubleshooting: https://www.nengo.ai/nengo/getting-started.html
 
 (7) Install Black using the following command:
