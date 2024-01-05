@@ -53,6 +53,5 @@ plt.figure()
 plt.plot(sim.trange(), sim.data[filtered])
 plt.plot(sim.trange(), sim.data[cos_probe])
 plt.xlim(0, 1)
-plt.title("Decoded Neuron Output - LastName")
+plt.title( "Decoded Neuron Output - LastName" )
 plt.show()
-
