@@ -16,7 +16,7 @@ For troubleshooting: https://code.visualstudio.com/docs/sourcecontrol/intro-to-g
 For troubleshooting: https://www.nengo.ai/nengo/getting-started.html
 
 (7) Install Black using the following command:
-pip install black
+`pip install black`
 
 (7) Fork this repository.
 
