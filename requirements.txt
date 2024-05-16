@@ -1,0 +1,10 @@
+nengo==3.2
+tensorflow==2.10.1
+nengo-dl==3.6.0
+nengo-gui
+black[jupyter]
+matplotlib
+scikit-learn
+jupyter
+jupyterlab
+pandas
