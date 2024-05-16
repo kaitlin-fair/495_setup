@@ -22,7 +22,7 @@ If you are using Anaconda, these commands should do the trick:
 - `conda activate 495venv` -- This command activates the environment so that you can install other programs within that environment. You might see the name inside of your brackets change from *base* to the name of your new environment.
 - Once you have activated your environment, cd to the directory in which your requirements.txt is stored, then run the following command:  
 `pip install -r requirements.txt`
-- From your activated terminal, launch your code editor. If you're using VS code, this command should do it: `code .` Within VS Code, in the search bar at the top type `>Terminal: Create New Terminal`. Select your _495venv_ environment if/when prompted. 
+- Within your terminal, launch your code editor. If you're using VS code, this command should do it: `code .` Within VS Code, in the search bar at the top type `>Terminal: Create New Terminal`. Select your _495venv_ environment if/when prompted. 
 
 If you are using Windows without Anaconda, these commands should work inside of your Command Prompt (**note: must use python 3.10**):  
 - Use your path to your downloaded Python 3.10.11 in the following command (the path below is only an example of what it might look like):  
@@ -30,7 +30,7 @@ If you are using Windows without Anaconda, these commands should work inside of 
 - Navigate to the `Scripts` folder within your virtual environment and type the command `.\activate` -- This command activates the environment so that you can install other programs within that environment. You might see the name inside of your brackets change from *base* to the name of your new environment.
 - Once you have activated your environment, cd to the directory in which your requirements.txt is stored, then run the following command:  
 `pip install -r requirements.txt`
-- From your activated terminal, launch your code editor. If you're using VS code, this command should do it: `code .` Within VS Code, in the search bar at the top type `>Terminal: Create New Terminal`. Select your _495venv_ environment if/when prompted. 
+- Within your terminal, launch your code editor. If you're using VS code, this command should do it: `code .` Within VS Code, in the search bar at the top type `>Terminal: Create New Terminal`. Select your _495venv_ environment if/when prompted. 
 
 If you are using Windows and neither of the above methods worked, you can instead do this *within VS Code*. Going this route requires that you have this virtual environment in each 495 folder you intend to work in. Copy/pasting doesn't always work, so you may need to repeat this process for each folder you will use.   
 - Add this folder to your workspace and open `nengo_495setup.ipynb`.  
