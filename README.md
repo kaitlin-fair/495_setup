@@ -29,8 +29,8 @@ If you are using Windows without Anaconda, these commands should work inside of 
 If you are using Windows and neither of the above methods worked, you can instead do this *within VS Code*. Going this route requires that you have this virtual environment in each 495 folder you intend to work in. Copy/pasting doesn't always work, so you may need to repeat this process for each folder you will use.   
 - Add this folder to your workspace and open `nengo_495setup.ipynb`.  
 - In the searchbar at the top, type in `>python: create environment`.  
-- Navigate to where python 3.10 is downloaded and choose the `python.exe` file _for version 3.10_  
-- Then pip install -r requirements.txt
+- Navigate to where python 3.10 is downloaded and select the `python.exe` file _for version 3.10_  
+- Within your VSCode terminal, navigate to the folder containing your `requirements.txt` file and type the command `pip install -r requirements.txt`.
   
 If you are using Linux or Mac, please let me know and I can find someone to provide assistance if needed.
   
