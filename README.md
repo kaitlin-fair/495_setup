@@ -1,29 +1,42 @@
-# Setup Assignment Instructions
+# ECE 495 Setup Assignment Instructions
+
+## Required Software and Virtual Environment
 
 (1) Set up a GitHub Account and familiarize yourself with how to use it. Here's a great reference used in ECE281: https://usafa-ece.github.io/ece281-book/appendix/github.html
 
-(2) Ensure you have Python downloaded locally to the computer you will use during this course. I used Anaconda to download Python: https://www.anaconda.com/download
+(2) Fork this repository, [this one](https://github.com/kaitlin-fair/495_tutorials), and [this one](https://github.com/kaitlin-fair/495_labs).
 
-(3) Install a code editor. I am using VS Code: https://code.visualstudio.com/download
+(3)  For this course, you will need a Python environment that uses **python 3.10.11** with specific software packages listed in requirements.txt in this repository. [Download Python 3.10.11](https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe) - This link will download the *.exe file for Python 3.10.11. Double click the downloaded file to start the installer. Be sure to check the box that says add to PATH!
 
-(4) Install Git: https://git-scm.com/download/win
+(4) Install VS Code: https://code.visualstudio.com/download
 
-(5) Link Git to GitHub. I did so using VS Code by clicking the little waving cat on the left vertical toolbar.
+(5) Install Git: https://git-scm.com/download/win
+
+(6) Link Git to GitHub. I did so using VS Code by clicking the little waving cat on the left vertical toolbar.
 For troubleshooting: https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_open-a-git-repository
 
-(6) Install Nengo (this is what we will use to program neurons) using the following command: 
-`pip install nengo`
-For troubleshooting: https://www.nengo.ai/nengo/getting-started.html
+(7) Create a virtual environment using Python 3.10.11. The process to do so is to create a new environment using Python 3.10.11, activate the new environment, then download the packages using the requirements.txt file. I will provide instructions on how to do this *within VS Code*. Going this route requires that you have this virtual environment in each 495 folder you intend to work in. Copy/pasting doesn't always work, so you may need to repeat this process for each folder you will use.
 
-(7) Install Black using the following command:
-`pip install black`
+If you are using Anaconda, these commands should do the trick:  
+`conda create --name 495venv python=3.10` -- This command gives your new environment a name of *495venv*, however you can name it whatever you'd like.  
+`conda activate 495venv` -- This command activates the environment so that you can install other programs within that environment. You might see the name inside of your brackets change from *base* to the name of your new environment.
 
-(7) Fork this repository.
+If you are using Windows without Anaconda, these commands should work inside of your Command Prompt (**note: must use python 3.10**):  
+Use your path to your downloaded Python 3.10.11 in the following command (the path below is only an example of what it might look like):  
+`C:\Users\C2XName\AppData\Local\Programs\Python\Python310\python.exe -m venv 495venv` -- This command gives your new environment a name of *495venv*  
+Navigate to the `Scripts` folder within your virtual environment and type the command `.\activate` -- This command activates the environment so that you can install other programs within that environment. You might see the name inside of your brackets change from *base* to the name of your new environment. 
+  
+Note: If you are using Linux or Mac, please let me know and I can find someone to provide assistance if needed.
+  
+(8) Once you have activated your environment, cd to the directory in which your requirements.txt is stored, then run the following command:  
+`pip install -r requirements.txt`  
+  
+(9) From your activated terminal, launch your code editor. If you're using VS code, this command should do it: `code .` Within VS Code, in the search bar at the top type `>Terminal: Create New Terminal`. Select your _495venv_ environment if/when prompted. 
+  
+## Test your environment
 
-(8) Open single_neuron.py. Edit the title of the plot (line 57) to also display your last name. For me, the title shows "Decoded Neuron Output - Fair". Run your edited code. Your code should return 1 plot that displays the decoded neuron output with your last name in the title. Save this figure in your repository as a Neuron_Output.png (it will also upload as part of your submission and will show me that everything ran properly). Don't worry about understanding this code yet! We will get there around T10.
+(1) Open `nengo_495setup.ipynb`. Try to run. It may ask you to install a Jupyter extension - if it does, do it! If it runs properly, move to step 2.
 
-(9) Run Black to check your code for minor errors and improper formatting using the following command (I did this in the terminal within VS code):
-`black --check .`
-If the output does not say "All done! ✨ 🍰 ✨ 1 file would be left unchanged.", you'll need to edit the code to resolve the issue. You can take a look at how Black would reformat your code using `black --diff .` Edit the code accordingly to resolve the issue and run again. Repeat until the output is "All done! ✨ 🍰 ✨ 1 file would be left unchanged.". You could also simply run `black .` to automatically make the changes, but I strongly recommend you understand what changes are made prior to submitting your file. For troubleshooting and more ways to use Black: https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html
+(2) Edit the title of the plot (line 57) to also display your last name. For me, the title shows "Decoded Neuron Output - Fair". Run your edited code. Your code should return 1 plot that displays the decoded neuron output with your last name in the title. Save this figure in your repository as a Neuron_Output.png (it will also upload as part of your submission and will show me that everything ran properly). Don't worry about understanding this code yet! We will get there later.
 
-(10) Upload your code from GitHub into Gradescope under "Setup Lab" assignment by T4, 1159. If the autograder fails, you did not successfully run Black. You can resubmit as many times as needed prior to the due date. You are also encouraged to schedule time for EI to debug as needed: [Book here](https://outlook.office.com/bookwithme/user/94f514961fa3476ab9598d4a2173d076@afacademy.af.edu?anonymous&ep=plink)
+(10) Upload _only_ your `nengo_495setup.ipynb` from GitHub into Gradescope under "Setup Lab" assignment by T4, 1159. You are encouraged to schedule time for EI to debug as needed: [Book here](https://outlook.office.com/bookwithme/user/94f514961fa3476ab9598d4a2173d076@afacademy.af.edu?anonymous&ep=plink)
